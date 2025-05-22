@@ -1,76 +1,117 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Drap Saten</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Drap Saten</title>
+        <link rel="stylesheet" href="style.css" />
+        </head>
+        <body>
 
-  <!-- NAV -->
-  <nav class="navbar">
-    <h1 class="navbar__logo">Drap Saten</h1>
-    <ul class="navbar__links">
-      <li class="navbar__item navbar__item--active"><a href="#" class="navbar__link">Home</a></li>
-      <li class="navbar__item"><a href="#" class="navbar__link">About</a></li>
-      <li class="navbar__item"><a href="#" class="navbar__link">Products</a></li>
-      <li class="navbar__item"><a href="#" class="button">Contacto</a></li>
-    </ul>
-    <img src="./img/menu-btn.png" alt="" class="navbar__menu-btn" />
-  </nav>
+        <!-- NAV -->
+        <nav class="navbar">
+            <h1 class="navbar__logo">Drap Saten</h1>
+            <ul class="navbar__links">
+            <li class="navbar__item navbar__item--active"><a href="#" class="navbar__link">Home</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">About</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">Products</a></li>
+            <li class="navbar__item"><a href="#" class="button">Contacto</a></li>
+            </ul>
+            <img src="./img/menu-btn.png" alt="" class="navbar__menu-btn" />
+        </nav>
 
-  <!-- HEADER -->
-  <header class="hero">
-    <div class="hero__content">
-      <h2 class="hero__subtitle">Colchones Suizos</h2>
-      <div class="hero__line"></div>
-      <h1 class="hero__title">DRAP SATEN</h1>
-      <a href="#" class="button">Ver Productos</a>
-    </div>
-  </header>
+        <!-- HEADER -->
+        <header class="hero">
+            <div class="hero__content">
+            <h2 class="hero__subtitle">Colchones Suizos</h2>
+            <div class="line"></div>
+            <h1 class="hero__title">DRAP SATEN</h1>
+            <a href="#" class="button">Ver Productos</a>
+            </div>
+        </header>
 
-  <!-- SOBRE LA MARCA -->
-  <section class="brand">
-    <div class="brand__title">
-      <h2 class="brand__title-text">Confía en el descanso suizo</h2>
-      <div class="brand__line"></div>
-      <p class="brand__intro">
-        Drap Saten nace de la tradición suiza por el descanso bien hecho.  
-        Diseñamos colchones pensando en la salud, la durabilidad y la calidad del sueño de quienes los disfrutan.
-      </p>
-    </div>
+        <!-- SOBRE LA MARCA -->
+        <section class="brand">
+            <div class="brand__title">
+            <h2 class="brand__title-text">Confía en el descanso suizo</h2>
+            <div class="line"></div>
+            <p class="brand__intro">
+                Drap Saten nace de la tradición suiza por el descanso bien hecho.  
+                Diseñamos colchones pensando en la salud, la durabilidad y la calidad del sueño de quienes los disfrutan.
+            </p>
+            </div>
 
-    <div class="brand__row">
-      <div class="brand__col">
-        <img src="./img/img1.png" alt="Colchón premium Drap Saten" class="brand__img" />
-        <h4 class="brand__heading">Materiales de alta gama</h4>
-        <p class="brand__text">
-          Cada colchón está fabricado con materiales seleccionados por su resistencia, confort y transpirabilidad. 
-          Porque el buen descanso empieza por una buena base.
-        </p>
-        <a href="#" class="button brand__button">Leer Más</a>
-      </div>
+            <div class="brand__row">
+            <div class="brand__col">
+                <img src="./img/img1.png" alt="Colchón premium Drap Saten" class="brand__img" />
+                <h4 class="brand__heading">Materiales de alta gama</h4>
+                <p class="brand__text">
+                Cada colchón está fabricado con materiales seleccionados por su resistencia, confort y transpirabilidad. 
+                Porque el buen descanso empieza por una buena base.
+                </p>
+                <a href="#" class="button brand__button">Leer Más</a>
+            </div>
 
-      <div class="brand__col">
-        <img src="./img/img1.png" alt="Detalle de costura artesanal" class="brand__img" />
-        <h4 class="brand__heading">Diseño cuidado al detalle</h4>
-        <p class="brand__text">
-          Fusionamos tecnología y artesanía para ofrecer productos únicos.  
-          El resultado: colchones que se adaptan a ti y a tu forma de dormir.
-        </p>
-        <a href="#" class="button brand__button">Leer Más</a>
-      </div>
-    </div>
-  </section>
+            <div class="brand__col">
+                <img src="./img/img1.png" alt="Detalle de costura artesanal" class="brand__img" />
+                <h4 class="brand__heading">Diseño cuidado al detalle</h4>
+                <p class="brand__text">
+                Fusionamos tecnología y artesanía para ofrecer productos únicos.  
+                El resultado: colchones que se adaptan a ti y a tu forma de dormir.
+                </p>
+                <a href="#" class="button brand__button">Leer Más</a>
+            </div>
+            </div>
+        </section>
 
-  <script>
-    const menuBtn = document.querySelector('.navbar__menu-btn');
-    const navLinks = document.querySelector('.navbar__links');
-    menuBtn.addEventListener('click', () => {
-      navLinks.classList.toggle('navbar__links--mobile');
-    });
-  </script>
 
-</body>
-</html>
+
+        <!-- MATERIALS -->
+
+        <section class="materials">
+        <div class="materials__row">
+            <div class="materials__col-text">
+            <div class="materials__title">
+                <h2 class="materials__title-text">Los materiales más nobles</h2>
+                <div class="line"></div>
+                <p class="materials__description">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure ab dolorem officia totam expedita dignissimos excepturi voluptatibus tempore nisi. Provident, nisi consequatur? Obcaecati officiis qui, reiciendis vel pariatur accusamus aliquid.        </p>
+            </div>
+            </div>
+
+        <div class="materials__col-images">
+        <img src="/img/coco_essenzia.webp" alt="Imagen 1" class="materials__image materials__image--1" />
+        <img src="/img/lana_essenzia.webp" alt="Imagen 2" class="materials__image materials__image--2" />
+        <img src="/img/materiales_naturales.webp" alt="Imagen 3" class="materials__image materials__image--3" />
+        </div>
+
+        </div>
+        </section>
+
+
+
+        <!-- CIRCULO LOGO -->
+
+        <section class="circuloLogo">
+            <div class="row__circuloLogo">
+                <img src="/img/SB-Descanso-Circular-con-logo-pantalla.png" alt="" class="circuloLogo__image">
+            </div>
+        </section>
+        
+
+
+        
+
+
+
+
+        <script>
+            const menuBtn = document.querySelector('.navbar__menu-btn');
+            const navLinks = document.querySelector('.navbar__links');
+            menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('navbar__links--mobile');
+            });
+        </script>
+
+        </body>
+        </html>

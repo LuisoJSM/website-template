@@ -14,6 +14,19 @@ ul {
   list-style: none;
 }
 
+
+.line {
+  width: 50px;
+  height: 4px;
+  background-color: red;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+
+
+
+
 /* BOTÓN */
 .button {
   padding: 8px 15px;
@@ -117,6 +130,7 @@ ul {
 .brand {
   width: 80%;
   margin: 80px auto;
+  padding-bottom: 200px;
 }
 .brand__title {
   text-align: center;
@@ -125,13 +139,7 @@ ul {
 .brand__title-text {
   font-size: 4vmin;
 }
-.brand__line {
-  width: 50px;
-  height: 4px;
-  background-color: red;
-  margin: 10px auto;
-  border-radius: 5px;
-}
+
 .brand__intro {
   text-align: center;
   font-size: 2.2vmin;
@@ -172,6 +180,127 @@ ul {
 
 
 
+/* MATERIALS */
+.materials {
+  width: 80%;
+  margin: 100px auto;
+  position: relative;
+  z-index: 1;
+}
+
+.materials__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.materials__col-text {
+  width: 50%;
+}
+
+.materials__title-text {
+  font-size: 4vmin;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.materials__description {
+  font-size: 2vmin;
+  color: #444;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.materials__col-images {
+  position: relative;
+  width: 40%;
+  height: 400px;
+}
+
+.materials__image {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.materials__image--1 {
+  top: 50px;
+  left: -90px;
+  z-index: 2;
+  width: 70%;
+}
+
+.materials__image--2 {
+  top: -70px;
+  left: 100px;
+  z-index: 1;
+  width: 90%;
+
+  /* opacity: 0.9; */
+}
+
+.materials__image--3 {
+  top: 170px;
+  right: -140px;
+  z-index: 3;
+  width: 80%;
+
+  /* opacity: 0.9; */
+}
+
+
+.materials__image:hover {
+  transform: scale(1.05);
+}
+
+
+/* CIRCULO LOGO */
+.circuloLogo {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 150px 0;
+  z-index: 0;
+}
+
+.row__circuloLogo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.circuloLogo__image {
+  position: absolute;
+  width: 30%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  animation: girar 2s linear infinite;
+
+}
+
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.circuloLogo__image {
+  animation: girar 20s linear infinite;
+}
+
+
 
 
 /* RESPONSIVE */
@@ -206,8 +335,65 @@ ul {
   .brand__row {
     flex-direction: column;
     gap: 40px;
+    padding-bottom: -200px;
   }
   .brand__col {
     width: 100%;
   }
+
+
+  /* MATERIALES */
+  .materials__row {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .materials__col-text,
+  .materials__col-images {
+    width: 100%;
+    text-align: center;
+  }
+
+  .materials__col-images {
+    height: auto;
+    position: relative;
+  }
+
+  .materials__image {
+    position: static;
+    margin: 20px auto;
+    width: 80%;
+    display: block;
+    transform: none !important;
+  }
+
+  .materials__image--1,
+  .materials__image--2 {
+    top: auto;
+    left: auto;
+    opacity: 1;
+    z-index: auto;
+  }
+
+  /* CIRCULO LOGO */
+  .circuloLogo {
+    height: auto;
+    padding: 60px 0;
+    margin: 100px 0;
+  }
+
+  .circuloLogo__image {
+    position: static;
+    width: 60%;
+    transform: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+
+
+
+
+
+
 }
