@@ -1,9 +1,10 @@
-<?php $titulo = "Inicio - Drap Saten"; ?>
-<!DOCTYPE html>
-<html lang="es">
-<?php include 'includes/head.php'; ?>
-<body class="home">
-<?php include 'includes/header.php'; ?>
+<?php
+$titulo = "Inicio - Drap Saten";
+$pagina = basename($_SERVER['PHP_SELF'], ".php");
+$claseBody = $pagina;
+
+ob_start(); // Capturo el contenido
+?>
 
 <!-- HERO -->
 <header class="hero">
@@ -70,4 +71,14 @@
   </div>
 </section>
 
-<?php include 'includes/footer.php'; ?>
+<!-- CIRCULO LOGO -->
+<section class="circuloLogo">
+  <div class="row__circuloLogo">
+    <img src="/WEB_DRAPSATEN/img/SB-Descanso-Circular-con-logo-pantalla.png" alt="Logo circular" class="circuloLogo__image">
+  </div>
+</section>
+
+<?php
+$contenido = ob_get_clean(); // Guardo todo el contenido
+include 'includes/layout.php'; //Lo inserto en la plantilla
+?>
