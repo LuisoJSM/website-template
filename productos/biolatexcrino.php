@@ -10,7 +10,7 @@ ob_start();
   <div class="producto__fila">
     
     <div class="producto__columna producto__columna--imagen">
-      <img src="/WEB_DRAPSATEN/img/productos/biolatexcrino_principal" alt="Colchón Bio Latex Crino" class="producto__imagen" />
+<img src="/WEB_DRAPSATEN/img/productos/biolatexcrino/biolatexcrino_principal.jpg" alt="Colchón Bio Latex Crino" class="producto__imagen" />
     </div>
 
     <div class="producto__columna producto__columna--contenido">

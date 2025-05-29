@@ -292,7 +292,62 @@ background-image: url('/WEB_DRAPSATEN/img/header-bg.png');
 /* PAGINA PRODUCTO */
 
 
+/* Contenedor principal de la fila */
+.producto__fila {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px; 
+  align-items: center;
+  justify-content: center;
+  margin: 60px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
 
+/* Columna común */
+.producto__columna {
+  flex: 1 1 45%; 
+}
+
+/* Imagen responsiva */
+.producto__imagen {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenido textual */
+.producto__titulo {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.producto__descripcion {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .producto__fila {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .producto__columna {
+    flex: 1 1 100%;
+  }
+
+  .producto__titulo {
+    font-size: 2rem;
+  }
+
+  .producto__descripcion {
+    font-size: 1rem;
+  }
+}
 
 
 
@@ -301,7 +356,7 @@ background-image: url('/WEB_DRAPSATEN/img/header-bg.png');
 
 /* FOOTER */
 .footer {
-  margin-top: 200px; /* o ajusta el valor que prefieras */
+  margin-top: 200px;
   background-color: #111;
   color: whitesmoke;
   padding: 60px 20px 30px;
